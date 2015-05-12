@@ -1,0 +1,33 @@
+<!-- Static navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Twitter Sentiment App</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">Welcome</a></li>
+        <li><a href="#works">Projects</a></li>
+        <li><a href="about.html">Connect</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="container" id="form-container">
+  <h2 class="form-twitter-heading">Twitter Sentiment Analyisis</h2>
+  <form id="twitter-keyword" action="index.html" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+    <label for="inputKeywords" class="sr-only">Keywords</label>
+    <input type="text" id="inputKeywords" class="form-control" placeholder="Enter Keywords (e.g. SendGrid)">
+
+    <button type="button" name="query" class="btn btn-lg btn-success btn-block">Query</button>
+  </form>
+</div>
