@@ -1,9 +1,10 @@
 window.TweetApp = {
   Models: {},
+  Collections: {},
+  Views: {},
 
   initialize: function () {
-    alert("Welcome to Tweet App!");
+    var view = new TweetApp.Views.Root();
+    $("body").append(view.render().$el);
   }
 };
-
-$(TweetApp.initialize);

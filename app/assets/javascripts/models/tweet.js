@@ -1,3 +1,3 @@
-window.TweetApp.Models.Tweet = Backbone.Model.extende({
+window.TweetApp.Models.Tweet = Backbone.Model.extend({
 
 });

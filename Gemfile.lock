@@ -233,6 +233,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   database_cleaner
+  ejs
   factory_girl_rails (~> 4.0)
   font-awesome-rails
   jbuilder (~> 2.0)
