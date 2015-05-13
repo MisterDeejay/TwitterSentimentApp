@@ -14,7 +14,8 @@ window.TweetApp.Views.Root = Backbone.View.extend({
       url: '/get_tweets',
       type: 'POST',
       data: queryStr,
-      success: function() {
+      success: function(resp) {
+        debugger
         alert("Success!");
       },
       error: function() {

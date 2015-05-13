@@ -2,10 +2,8 @@ class HomeController < ApplicationController
   def root; end
 
   def get_tweets
-    byebug
-    query_params = query_params.nil? ? "sendgrid" : query_params
     @tweets = $twitter.search(query_params, count: 100)
-    render :index
+    render json: @tweets
   end
 
   private
