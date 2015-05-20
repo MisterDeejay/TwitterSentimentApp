@@ -27,6 +27,8 @@ gem 'typekit-rails'
 gem 'jquery-ui-rails'
 gem 'ejs'
 gem 'twitter'
+gem 'datumbox'
+gem 'rest-client'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

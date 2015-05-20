@@ -1,4 +1,4 @@
-class CreateTweets < ActiveRecord::Migration
+class AddTweets < ActiveRecord::Migration
   def change
     create_table :tweets do |t|
       t.string :twitter_id, null: false
