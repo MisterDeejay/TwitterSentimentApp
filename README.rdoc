@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is able to perform sentiment analysis on the first 100 tweets
+returned by a user's query. I developed a [Datumbox Ruby Gem](https://github.com/MisterDeejay/Datumbox)
+that provides an interface to the [Datumbox Twitter Sentiment Analysis API]
+(http://www.datumbox.com/machine-learning-api/). This algorithm applies
+a machine learning function to the text of the tweet and is accessed through a
+REST API. The output of the request from the function classifies the tweet as
+either "positive", "negative" or "neutral" based on the body of the tweet.
 
-Things you may want to cover:
+The app was developed in Ruby (2.1.2) and Ruby on Rails. The Backbone.js
+framework was used for MVC architecture on the front-end. I used the [Twitter Ruby Gem]
+(https://github.com/sferik/twitter) to request the user's tweets through the
+Search REST API. Twitter Bootstrap used for some styling and DOM layout.
 
-* Ruby version
+=== TODO
+* Use React.js library to perform reconciliation on TweetView and improve app performance.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Use Twitter Streaming API to try real-time updates of tweet's from the user's query
