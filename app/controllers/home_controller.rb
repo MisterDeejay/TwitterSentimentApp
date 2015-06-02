@@ -2,10 +2,10 @@ class HomeController < ApplicationController
   def root; end
 
   def get_tweets
-    tweets = $twitter.search(query_params, count: 5).attrs[:statuses]
+    tweets = $twitter.search(query_params, count: 50).attrs[:statuses]
     @tweets = []
     # datumbox = Datumbox.create('2ef48d67598553804617c9862dfcaf8f')
-    hydra = Typhoeus::Hydra.new(max_concurrency: 5)
+    hydra = Typhoeus::Hydra.new(max_concurrency: 50)
     requests = tweets.map do |t|
       tweet = Tweet.new
       tweet.twitter_id = t[:id_str]
@@ -34,8 +34,12 @@ class HomeController < ApplicationController
 
     @tweets = requests.map do |r|
       tweet = r.options[:headers][:tweet]
-      parsed_datumbox_response = JSON.parse(r.response.options[:response_body])
-      tweet.sentiment = parsed_datumbox_response["output"]["result"]
+      if r.response.options[:response_code] != 500
+        parsed_datumbox_response = JSON.parse(r.response.options[:response_body])
+        if parsed_datumbox_response["output"]
+          tweet.sentiment = parsed_datumbox_response["output"]["result"]
+        end
+      end
       tweet
     end
 
