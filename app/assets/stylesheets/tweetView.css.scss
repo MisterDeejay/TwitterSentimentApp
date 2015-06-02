@@ -11,6 +11,14 @@ div.border {
   border-radius: 5px;
 }
 
+div.border.postive {
+  border: 1px solid #5CB85C;
+}
+
+div.border.negative {
+  border: 1px solid #FF0000;
+}
+
 div.tweet-container {
   float: left;
   width: 100%;
@@ -55,4 +63,12 @@ p.tweet-text {
   letter-spacing: .01em;
   margin-bottom: 0px;
   overflow-wrap: break-word;
+}
+
+p.tweet-text.positive {
+  color: #5CB85C;
+}
+
+p.tweet-text.negative {
+  color: #FF0000;
 }
