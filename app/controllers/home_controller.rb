@@ -2,11 +2,11 @@ class HomeController < ApplicationController
   def root; end
 
   def get_tweets
-    tweets = $twitter.search(query_params, count: 1).attrs[:statuses]
+    tweets = $twitter.search(query_params, count: 5).attrs[:statuses]
     @tweets = []
-    binding.pry
-    datumbox = Datumbox.create('2ef48d67598553804617c9862dfcaf8f')
-    tweets.each do |t|
+    # datumbox = Datumbox.create('2ef48d67598553804617c9862dfcaf8f')
+    hydra = Typhoeus::Hydra.new(max_concurrency: 5)
+    requests = tweets.map do |t|
       tweet = Tweet.new
       tweet.twitter_id = t[:id_str]
       tweet.text = t[:text]
@@ -19,9 +19,26 @@ class HomeController < ApplicationController
 
       # Need to remove @ symbols to use datumbox API analysis
       sentiment_text = tweet.text.gsub(/@/,'')
-      tweet.sentiment = datumbox.twitter_sentiment_analysis(text: sentiment_text)
-      @tweets << tweet
+
+      request = Typhoeus::Request.new(
+        "http://api.datumbox.com:80/1.0/TwitterSentimentAnalysis.json",
+        method: :post,
+        params: { api_key: "2ef48d67598553804617c9862dfcaf8f",
+                  text: sentiment_text },
+        headers: { tweet: tweet }
+      )
+      hydra.queue(request)
+      request
     end
+    hydra.run
+
+    @tweets = requests.map do |r|
+      tweet = r.options[:headers][:tweet]
+      parsed_datumbox_response = JSON.parse(r.response.options[:response_body])
+      tweet.sentiment = parsed_datumbox_response["output"]["result"]
+      tweet
+    end
+
     render :index
   end
 

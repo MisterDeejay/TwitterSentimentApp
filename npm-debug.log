@@ -1,9 +1,9 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'react-tools' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'grunt' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 verbose cache add [ 'react-tools', null ]
-5 verbose cache add name=undefined spec="react-tools" args=["react-tools",null]
+4 verbose cache add [ 'grunt', null ]
+5 verbose cache add name=undefined spec="grunt" args=["grunt",null]
 6 verbose parsed url { protocol: null,
 6 verbose parsed url   slashes: null,
 6 verbose parsed url   auth: null,
@@ -13,194 +13,202 @@
 6 verbose parsed url   hash: null,
 6 verbose parsed url   search: null,
 6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'react-tools',
-6 verbose parsed url   path: 'react-tools',
-6 verbose parsed url   href: 'react-tools' }
-7 silly lockFile 0f761efe-react-tools react-tools
-8 verbose lock react-tools /Users/khaaliqdejan2/.npm/0f761efe-react-tools.lock
-9 silly lockFile 0f761efe-react-tools react-tools
-10 silly lockFile 0f761efe-react-tools react-tools
-11 verbose addNamed [ 'react-tools', '' ]
+6 verbose parsed url   pathname: 'grunt',
+6 verbose parsed url   path: 'grunt',
+6 verbose parsed url   href: 'grunt' }
+7 silly lockFile 20ff3fd8-grunt grunt
+8 verbose lock grunt /Users/khaaliqdejan2/.npm/20ff3fd8-grunt.lock
+9 silly lockFile 20ff3fd8-grunt grunt
+10 silly lockFile 20ff3fd8-grunt grunt
+11 verbose addNamed [ 'grunt', '' ]
 12 verbose addNamed [ null, '*' ]
-13 silly lockFile 47fcd5e0-react-tools react-tools@
-14 verbose lock react-tools@ /Users/khaaliqdejan2/.npm/47fcd5e0-react-tools.lock
-15 silly addNameRange { name: 'react-tools', range: '*', hasData: false }
-16 verbose request where is /react-tools
+13 silly lockFile 55f1ff24-grunt grunt@
+14 verbose lock grunt@ /Users/khaaliqdejan2/.npm/55f1ff24-grunt.lock
+15 silly addNameRange { name: 'grunt', range: '*', hasData: false }
+16 verbose request where is /grunt
 17 verbose request registry https://registry.npmjs.org/
-18 verbose request id aabfd05df4c40b5c
-19 verbose url raw /react-tools
-20 verbose url resolving [ 'https://registry.npmjs.org/', './react-tools' ]
-21 verbose url resolved https://registry.npmjs.org/react-tools
-22 verbose request where is https://registry.npmjs.org/react-tools
-23 info trying registry request attempt 1 at 02:31:44
-24 http GET https://registry.npmjs.org/react-tools
-25 http 200 https://registry.npmjs.org/react-tools
+18 verbose request id 79b3d2ce48bbc578
+19 verbose url raw /grunt
+20 verbose url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+21 verbose url resolved https://registry.npmjs.org/grunt
+22 verbose request where is https://registry.npmjs.org/grunt
+23 info trying registry request attempt 1 at 20:41:26
+24 http GET https://registry.npmjs.org/grunt
+25 http 200 https://registry.npmjs.org/grunt
 26 silly registry.get cb [ 200,
 26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-26 silly registry.get     etag: '"BSA6UCQM4O64NHCTWM4CW0CGS"',
+26 silly registry.get     etag: '"9RP0MWX2KFZZUV80Q2GW24B4U"',
 26 silly registry.get     'content-type': 'application/json',
 26 silly registry.get     'cache-control': 'max-age=60',
-26 silly registry.get     'content-length': '73333',
+26 silly registry.get     'content-length': '89332',
 26 silly registry.get     'accept-ranges': 'bytes',
-26 silly registry.get     date: 'Wed, 20 May 2015 09:31:42 GMT',
+26 silly registry.get     date: 'Fri, 22 May 2015 03:41:27 GMT',
 26 silly registry.get     via: '1.1 varnish',
-26 silly registry.get     age: '0',
+26 silly registry.get     age: '1',
 26 silly registry.get     connection: 'keep-alive',
-26 silly registry.get     'x-served-by': 'cache-lax1432-LAX',
+26 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
 26 silly registry.get     'x-cache': 'HIT',
 26 silly registry.get     'x-cache-hits': '1',
-26 silly registry.get     'x-timer': 'S1432114301.917124,VS0,VE136',
+26 silly registry.get     'x-timer': 'S1432266087.828822,VS0,VE1',
 26 silly registry.get     vary: 'Accept' } ]
-27 silly addNameRange number 2 { name: 'react-tools', range: '*', hasData: true }
-28 silly addNameRange versions [ 'react-tools',
-28 silly addNameRange   [ '0.3.0',
+27 silly addNameRange number 2 { name: 'grunt', range: '*', hasData: true }
+28 silly addNameRange versions [ 'grunt',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6',
+28 silly addNameRange     '0.2.7',
+28 silly addNameRange     '0.2.8',
+28 silly addNameRange     '0.2.9',
+28 silly addNameRange     '0.2.10',
+28 silly addNameRange     '0.2.11',
+28 silly addNameRange     '0.2.12',
+28 silly addNameRange     '0.2.13',
+28 silly addNameRange     '0.2.14',
+28 silly addNameRange     '0.2.15',
+28 silly addNameRange     '0.3.0',
 28 silly addNameRange     '0.3.1',
 28 silly addNameRange     '0.3.2',
 28 silly addNameRange     '0.3.3',
+28 silly addNameRange     '0.3.4',
+28 silly addNameRange     '0.3.5',
+28 silly addNameRange     '0.3.6',
+28 silly addNameRange     '0.3.7',
+28 silly addNameRange     '0.3.8',
+28 silly addNameRange     '0.3.9',
+28 silly addNameRange     '0.3.10',
+28 silly addNameRange     '0.3.11',
+28 silly addNameRange     '0.3.12',
+28 silly addNameRange     '0.3.13',
+28 silly addNameRange     '0.3.14',
+28 silly addNameRange     '0.3.15',
+28 silly addNameRange     '0.3.16',
+28 silly addNameRange     '0.3.17',
 28 silly addNameRange     '0.4.0',
 28 silly addNameRange     '0.4.1',
-28 silly addNameRange     '0.5.0',
-28 silly addNameRange     '0.5.1',
 28 silly addNameRange     '0.4.2',
-28 silly addNameRange     '0.5.2',
-28 silly addNameRange     '0.8.0',
-28 silly addNameRange     '0.9.0-rc1',
-28 silly addNameRange     '0.9.0',
-28 silly addNameRange     '0.10.0-rc1',
-28 silly addNameRange     '0.10.0',
-28 silly addNameRange     '0.11.0-rc1',
-28 silly addNameRange     '0.11.0',
-28 silly addNameRange     '0.11.1',
-28 silly addNameRange     '0.11.2',
-28 silly addNameRange     '0.12.0-rc1',
-28 silly addNameRange     '0.12.0',
-28 silly addNameRange     '0.12.1',
-28 silly addNameRange     '0.12.2',
-28 silly addNameRange     '0.13.0-alpha.1',
-28 silly addNameRange     '0.13.0-alpha.2',
-28 silly addNameRange     '0.13.0-beta.1',
-28 silly addNameRange     '0.13.0-beta.2',
-28 silly addNameRange     '0.13.0-rc1',
-28 silly addNameRange     '0.13.0-rc2',
-28 silly addNameRange     '0.13.0',
-28 silly addNameRange     '0.13.1',
-28 silly addNameRange     '0.13.2',
-28 silly addNameRange     '0.13.3',
-28 silly addNameRange     '0.14.0-alpha1' ] ]
-29 verbose addNamed [ 'react-tools', '0.13.3' ]
-30 verbose addNamed [ '0.13.3', '0.13.3' ]
-31 silly lockFile a003229d-react-tools-0-13-3 react-tools@0.13.3
-32 verbose lock react-tools@0.13.3 /Users/khaaliqdejan2/.npm/a003229d-react-tools-0-13-3.lock
-33 silly lockFile b21d5d8e-act-tools-react-tools-0-13-3-tgz https://registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz
-34 verbose lock https://registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz /Users/khaaliqdejan2/.npm/b21d5d8e-act-tools-react-tools-0-13-3-tgz.lock
-35 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz',
-35 verbose addRemoteTarball   'da6ac7d4d7777a59a5e951cf46e72fd4b6b40a2c' ]
-36 info retry fetch attempt 1 at 02:31:44
-37 verbose fetch to= /var/folders/g6/xrfvjhpn3353dyv74p6jjsgr0000gq/T/npm-33566-Dm3Mpn9u/registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz
-38 http GET https://registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz
-39 http 200 https://registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz
-40 silly lockFile b21d5d8e-act-tools-react-tools-0-13-3-tgz https://registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz
-41 silly lockFile b21d5d8e-act-tools-react-tools-0-13-3-tgz https://registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz
-42 silly lockFile a003229d-react-tools-0-13-3 react-tools@0.13.3
-43 silly lockFile a003229d-react-tools-0-13-3 react-tools@0.13.3
-44 silly lockFile 47fcd5e0-react-tools react-tools@
-45 silly lockFile 47fcd5e0-react-tools react-tools@
-46 silly resolved [ { name: 'react-tools',
-46 silly resolved     description: 'A set of complementary tools to React, including the JSX transformer.',
-46 silly resolved     version: '0.13.3',
-46 silly resolved     keywords: [ 'react', 'jsx', 'transformer', 'view' ],
-46 silly resolved     homepage: 'https://facebook.github.io/react',
-46 silly resolved     bugs: { url: 'https://github.com/facebook/react/issues' },
-46 silly resolved     license: 'BSD-3-Clause',
-46 silly resolved     files:
-46 silly resolved      [ 'main.js',
-46 silly resolved        'bin/jsx',
-46 silly resolved        'src/',
-46 silly resolved        'vendor/fbtransform/',
-46 silly resolved        'vendor/inline-source-map.js' ],
-46 silly resolved     main: 'main.js',
-46 silly resolved     bin: { jsx: './bin/jsx' },
-46 silly resolved     repository: { type: 'git', url: 'https://github.com/facebook/react' },
-46 silly resolved     dependencies: { commoner: '^0.10.0', jstransform: '^10.1.0' },
+28 silly addNameRange     '0.4.3',
+28 silly addNameRange     '0.4.4',
+28 silly addNameRange     '0.4.5',
+28 silly addNameRange     '0.3.13-a',
+28 silly addNameRange     '0.4.0-a',
+28 silly addNameRange     '0.4.0-rc1',
+28 silly addNameRange     '0.4.0-rc2',
+28 silly addNameRange     '0.4.0-rc3',
+28 silly addNameRange     '0.4.0-rc4',
+28 silly addNameRange     '0.4.0-rc5',
+28 silly addNameRange     '0.4.0-rc6',
+28 silly addNameRange     '0.4.0-rc7',
+28 silly addNameRange     '0.4.0-rc8' ] ]
+29 verbose addNamed [ 'grunt', '0.4.5' ]
+30 verbose addNamed [ '0.4.5', '0.4.5' ]
+31 silly lockFile 81abf7ad-grunt-0-4-5 grunt@0.4.5
+32 verbose lock grunt@0.4.5 /Users/khaaliqdejan2/.npm/81abf7ad-grunt-0-4-5.lock
+33 silly lockFile ea6cf2d1--npmjs-org-grunt-grunt-0-4-5-tgz https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz
+34 verbose lock https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz /Users/khaaliqdejan2/.npm/ea6cf2d1--npmjs-org-grunt-grunt-0-4-5-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz',
+35 verbose addRemoteTarball   '56937cd5194324adff6d207631832a9d6ba4e7f0' ]
+36 info retry fetch attempt 1 at 20:41:27
+37 verbose fetch to= /var/folders/g6/xrfvjhpn3353dyv74p6jjsgr0000gq/T/npm-46065-vPtbEv_5/registry.npmjs.org/grunt/-/grunt-0.4.5.tgz
+38 http GET https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz
+39 http 200 https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz
+40 silly lockFile ea6cf2d1--npmjs-org-grunt-grunt-0-4-5-tgz https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz
+41 silly lockFile ea6cf2d1--npmjs-org-grunt-grunt-0-4-5-tgz https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz
+42 silly lockFile 81abf7ad-grunt-0-4-5 grunt@0.4.5
+43 silly lockFile 81abf7ad-grunt-0-4-5 grunt@0.4.5
+44 silly lockFile 55f1ff24-grunt grunt@
+45 silly lockFile 55f1ff24-grunt grunt@
+46 silly resolved [ { name: 'grunt',
+46 silly resolved     description: 'The JavaScript Task Runner',
+46 silly resolved     version: '0.4.5',
+46 silly resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+46 silly resolved     homepage: 'http://gruntjs.com/',
+46 silly resolved     repository: { type: 'git', url: 'git://github.com/gruntjs/grunt.git' },
+46 silly resolved     bugs: { url: 'http://github.com/gruntjs/grunt/issues' },
+46 silly resolved     licenses: [ [Object] ],
+46 silly resolved     main: 'lib/grunt',
+46 silly resolved     scripts: { test: 'grunt test' },
+46 silly resolved     engines: { node: '>= 0.8.0' },
+46 silly resolved     keywords:
+46 silly resolved      [ 'task',
+46 silly resolved        'async',
+46 silly resolved        'cli',
+46 silly resolved        'minify',
+46 silly resolved        'uglify',
+46 silly resolved        'build',
+46 silly resolved        'lodash',
+46 silly resolved        'unit',
+46 silly resolved        'test',
+46 silly resolved        'qunit',
+46 silly resolved        'nodeunit',
+46 silly resolved        'server',
+46 silly resolved        'init',
+46 silly resolved        'scaffold',
+46 silly resolved        'make',
+46 silly resolved        'jake',
+46 silly resolved        'tool' ],
+46 silly resolved     dependencies:
+46 silly resolved      { async: '~0.1.22',
+46 silly resolved        'coffee-script': '~1.3.3',
+46 silly resolved        colors: '~0.6.2',
+46 silly resolved        dateformat: '1.0.2-1.2.3',
+46 silly resolved        eventemitter2: '~0.4.13',
+46 silly resolved        'findup-sync': '~0.1.2',
+46 silly resolved        glob: '~3.1.21',
+46 silly resolved        hooker: '~0.2.3',
+46 silly resolved        'iconv-lite': '~0.2.11',
+46 silly resolved        minimatch: '~0.2.12',
+46 silly resolved        nopt: '~1.0.10',
+46 silly resolved        rimraf: '~2.2.8',
+46 silly resolved        lodash: '~0.9.2',
+46 silly resolved        'underscore.string': '~2.2.1',
+46 silly resolved        which: '~1.0.5',
+46 silly resolved        'js-yaml': '~2.0.5',
+46 silly resolved        exit: '~0.1.1',
+46 silly resolved        getobject: '~0.1.0',
+46 silly resolved        'grunt-legacy-util': '~0.2.0',
+46 silly resolved        'grunt-legacy-log': '~0.1.0' },
 46 silly resolved     devDependencies:
-46 silly resolved      { benchmark: '~1.0.0',
-46 silly resolved        browserify: '^9.0.3',
-46 silly resolved        'bundle-collapser': '^1.1.1',
-46 silly resolved        'coffee-script': '^1.8.0',
-46 silly resolved        coverify: '~1.0.4',
-46 silly resolved        derequire: '^2.0.0',
-46 silly resolved        envify: '^3.0.0',
-46 silly resolved        es3ify: '~0.1.2',
-46 silly resolved        'es5-shim': '^4.0.0',
-46 silly resolved        eslint: '^0.14.1',
-46 silly resolved        'esprima-fb': '^13001.1001.0-dev-harmony-fb',
-46 silly resolved        grunt: '~0.4.2',
-46 silly resolved        'grunt-cli': '~0.1.9',
-46 silly resolved        'grunt-compare-size': '~0.4.0',
-46 silly resolved        'grunt-contrib-clean': '^0.6.0',
-46 silly resolved        'grunt-contrib-compress': '^0.13.0',
-46 silly resolved        'grunt-contrib-connect': '~0.6.0',
-46 silly resolved        'grunt-contrib-jshint': '^0.10.0',
-46 silly resolved        'grunt-jest': '^0.1.2',
-46 silly resolved        'gzip-js': '~0.3.2',
-46 silly resolved        'jasmine-tapreporter': '~0.2.2',
-46 silly resolved        'jest-cli': '^0.2.1',
-46 silly resolved        optimist: '~0.6.0',
-46 silly resolved        phantomjs: '~1.9',
-46 silly resolved        platform: '^1.1.0',
-46 silly resolved        populist: '~0.1.6',
-46 silly resolved        recast: '^0.9.11',
-46 silly resolved        'sauce-tunnel': '~1.1.0',
-46 silly resolved        tmp: '~0.0.18',
-46 silly resolved        typescript: '^1.4.0',
-46 silly resolved        'uglify-js': '^2.4.20',
-46 silly resolved        uglifyify: '^3.0.1',
-46 silly resolved        wd: '~0.2.6' },
-46 silly resolved     engines: { node: '>=0.10.0' },
-46 silly resolved     preferGlobal: true,
-46 silly resolved     commonerConfig: { version: 4 },
-46 silly resolved     scripts:
-46 silly resolved      { test: 'jest',
-46 silly resolved        jest: 'jest',
-46 silly resolved        lint: 'eslint src',
-46 silly resolved        build: 'grunt build' },
-46 silly resolved     jest:
-46 silly resolved      { rootDir: '',
-46 silly resolved        scriptPreprocessor: 'jest/preprocessor.js',
-46 silly resolved        setupEnvScriptFile: 'jest/environment.js',
-46 silly resolved        persistModuleRegistryBetweenSpecs: true,
-46 silly resolved        testFileExtensions: [Object],
-46 silly resolved        modulePathIgnorePatterns: [Object],
-46 silly resolved        testPathIgnorePatterns: [Object],
-46 silly resolved        unmockedModulePathPatterns: [Object] },
-46 silly resolved     _id: 'react-tools@0.13.3',
-46 silly resolved     _shasum: 'da6ac7d4d7777a59a5e951cf46e72fd4b6b40a2c',
-46 silly resolved     _resolved: 'https://registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz',
-46 silly resolved     _from: 'react-tools@',
-46 silly resolved     _npmVersion: '2.7.3',
-46 silly resolved     _nodeVersion: '0.10.38',
-46 silly resolved     _npmUser: { name: 'zpao', email: 'paul@oshannessy.com' },
-46 silly resolved     maintainers: [ [Object], [Object] ],
+46 silly resolved      { temporary: '~0.0.4',
+46 silly resolved        'grunt-contrib-jshint': '~0.6.4',
+46 silly resolved        'grunt-contrib-nodeunit': '~0.2.0',
+46 silly resolved        'grunt-contrib-watch': '~0.5.3',
+46 silly resolved        difflet: '~0.2.3',
+46 silly resolved        semver: '2.1.0',
+46 silly resolved        shelljs: '~0.2.5' },
+46 silly resolved     _id: 'grunt@0.4.5',
 46 silly resolved     dist:
-46 silly resolved      { shasum: 'da6ac7d4d7777a59a5e951cf46e72fd4b6b40a2c',
-46 silly resolved        tarball: 'http://registry.npmjs.org/react-tools/-/react-tools-0.13.3.tgz' },
-46 silly resolved     directories: {} } ]
-47 info install react-tools@0.13.3 into /usr/local/lib
-48 info installOne react-tools@0.13.3
-49 verbose lib/node_modules/react-tools unbuild
-50 verbose tar unpack /Users/khaaliqdejan2/.npm/react-tools/0.13.3/package.tgz
-51 silly lockFile 5a40cc9f-cal-lib-node-modules-react-tools tar:///usr/local/lib/node_modules/react-tools
-52 verbose lock tar:///usr/local/lib/node_modules/react-tools /Users/khaaliqdejan2/.npm/5a40cc9f-cal-lib-node-modules-react-tools.lock
-53 silly lockFile c83cc146-m-react-tools-0-13-3-package-tgz tar:///Users/khaaliqdejan2/.npm/react-tools/0.13.3/package.tgz
-54 verbose lock tar:///Users/khaaliqdejan2/.npm/react-tools/0.13.3/package.tgz /Users/khaaliqdejan2/.npm/c83cc146-m-react-tools-0-13-3-package-tgz.lock
+46 silly resolved      { shasum: '56937cd5194324adff6d207631832a9d6ba4e7f0',
+46 silly resolved        tarball: 'http://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz' },
+46 silly resolved     _from: 'grunt@',
+46 silly resolved     _npmVersion: '1.4.4',
+46 silly resolved     _npmUser: { name: 'cowboy', email: 'cowboy@rj3.net' },
+46 silly resolved     maintainers: [ [Object], [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: '56937cd5194324adff6d207631832a9d6ba4e7f0',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/grunt/-/grunt-0.4.5.tgz' } ]
+47 info install grunt@0.4.5 into /usr/local/lib
+48 info installOne grunt@0.4.5
+49 verbose lib/node_modules/grunt unbuild
+50 verbose tar unpack /Users/khaaliqdejan2/.npm/grunt/0.4.5/package.tgz
+51 silly lockFile d04b7634-usr-local-lib-node-modules-grunt tar:///usr/local/lib/node_modules/grunt
+52 verbose lock tar:///usr/local/lib/node_modules/grunt /Users/khaaliqdejan2/.npm/d04b7634-usr-local-lib-node-modules-grunt.lock
+53 silly lockFile a08b225a-jan2-npm-grunt-0-4-5-package-tgz tar:///Users/khaaliqdejan2/.npm/grunt/0.4.5/package.tgz
+54 verbose lock tar:///Users/khaaliqdejan2/.npm/grunt/0.4.5/package.tgz /Users/khaaliqdejan2/.npm/a08b225a-jan2-npm-grunt-0-4-5-package-tgz.lock
 55 silly gunzTarPerm modes [ '755', '644' ]
-56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/react-tools'
-56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/react-tools']
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/grunt'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/grunt']
 56 error   errno: 3,
 56 error   code: 'EACCES',
-56 error   path: '/usr/local/lib/node_modules/react-tools',
+56 error   path: '/usr/local/lib/node_modules/grunt',
 56 error   fstream_type: 'Directory',
-56 error   fstream_path: '/usr/local/lib/node_modules/react-tools',
+56 error   fstream_path: '/usr/local/lib/node_modules/grunt',
 56 error   fstream_class: 'DirWriter',
 56 error   fstream_stack:
 56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
@@ -208,17 +216,17 @@
 56 error      'Object.oncomplete (fs.js:108:15)' ] }
 57 error Please try running this command again as root/Administrator.
 58 error System Darwin 14.0.0
-59 error command "node" "/usr/local/bin/npm" "install" "-g" "react-tools"
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "grunt"
 60 error cwd /Users/khaaliqdejan2/twitter_sentiment_app
 61 error node -v v0.10.35
 62 error npm -v 1.4.28
-63 error path /usr/local/lib/node_modules/react-tools
-64 error fstream_path /usr/local/lib/node_modules/react-tools
+63 error path /usr/local/lib/node_modules/grunt
+64 error fstream_path /usr/local/lib/node_modules/grunt
 65 error fstream_type Directory
 66 error fstream_class DirWriter
 67 error code EACCES
 68 error errno 3
-69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/react-tools'
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/grunt'
 70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
 70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
 70 error fstream_stack Object.oncomplete (fs.js:108:15)

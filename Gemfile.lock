@@ -91,6 +91,8 @@ GEM
     ejs (1.1.1)
     equalizer (0.0.11)
     erubis (2.7.0)
+    ethon (0.7.3)
+      ffi (>= 1.3.0)
     execjs (2.5.2)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
@@ -235,6 +237,8 @@ GEM
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
     typekit-rails (0.0.3)
+    typhoeus (0.7.1)
+      ethon (>= 0.7.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
@@ -282,5 +286,6 @@ DEPENDENCIES
   spring
   twitter
   typekit-rails
+  typhoeus
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

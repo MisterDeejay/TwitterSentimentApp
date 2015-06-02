@@ -1,0 +1,11 @@
+<div class="border">
+  <div class="tweet-container" id="<%= tweet.escape("twitter_id") %>">
+    <div class="header">
+      <img class="prof-pic" src="<%= tweet.escape("profile_image_url") %>" alt="prof_pic" />
+      <strong class=fullname><%= tweet.escape("name") %></strong>
+      <p class="screen-name">@<%= tweet.escape("screen_name") %> &#8226;
+        <%= tweet.escape("tweet_created_at") %></p>
+    </div>
+    <p class="tweet-text"><%= tweet.escape("text") %></p>
+  </div>  
+</div>

@@ -29,6 +29,7 @@ gem 'ejs'
 gem 'twitter'
 gem 'datumbox'
 gem 'rest-client'
+gem 'typhoeus'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

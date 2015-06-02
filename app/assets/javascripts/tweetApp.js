@@ -11,13 +11,20 @@ window.TweetApp = {
 
 
 Backbone.CompositeView = Backbone.View.extend({
-  addSubview: function(selecter, subview) {
+  addSubview: function(selector, subview) {
     this.subviews(selector).push(subview);
+    this.attachSubview(selector, subview.render());
+  },
+
+  attachSubview: function(selector, subview) {
+    $subviewEl = this.$(selector);
+    this.$(selector).append(subview.$el);
+    subview.delegateEvents();
   },
 
   subviews: function(selector) {
     this._subviews = this._subview || {}
-    
+
     if(!selector) {
       return this._subviews;
     } else {

@@ -11,15 +11,16 @@ window.TweetApp.Views.Root = Backbone.CompositeView.extend({
 
     var queryStr = $("form").serializeJSON();
     var tweets = [];
-    debugger
     $.ajax({
       context: this,
       url: '/get_tweets',
       type: 'POST',
       data: queryStr,
       success: function(resp) {
-        this.collection = TweetApp.Collections.Tweets(resp);
-        this.removePageLoad();
+        this.collection = new TweetApp.Collections.Tweets(resp);
+
+        // Might not need this...
+        // this.removePageLoad();
 
         this.render();
       },
@@ -29,18 +30,22 @@ window.TweetApp.Views.Root = Backbone.CompositeView.extend({
     });
   },
 
+  // removePageLoad: function(){
+  //   debugger
+  // },
+
   addPageLoad: function() {
     var $p = $("<p>");
     $p.css("text-align", "center");
     $p.html("Loading...");
-    $(".tweets-container").html($p);
+    $(".tweet-index").html($p);
   },
 
   addTweetSubview: function(tweet) {
     var tweetView = new TweetApp.Views.TweetView({
       model: tweet
     });
-    this.addSubview("ul.tweet-index", tweetView);
+    this.addSubview("div.tweet-index", tweetView);
     // Stuff TO-DO:
     // 1) add a ul to the template
     // 2) make a new TweetApp.Views.TweetView class
@@ -48,13 +53,14 @@ window.TweetApp.Views.Root = Backbone.CompositeView.extend({
 
   render: function() {
     var view = this;
+    var content = this.template();
+    this.$el.html(content);
     if (typeof this.collection != 'undefined') {
       this.collection.each(function(tweet) {
         view.addTweetSubview(tweet);
       });
     }
-    var content = this.template();
-    this.$el.html(content);
+    $("div.tweet-index").append('<div class="clearfix"></div>');
 
     return this;
   }
