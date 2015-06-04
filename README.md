@@ -1,7 +1,7 @@
 Twitter Sentiment App
 =====================
 
-The (Twitter Sentiment Application)[https://twitter-sentiment-app.herokuapp.com]
+The [Twitter Sentiment Application](https://twitter-sentiment-app.herokuapp.com)
  finds and rates the most recent tweets based on a user-generated query.
 
 ![screenshot](/screenshot.png)
